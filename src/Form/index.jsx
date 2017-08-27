@@ -68,6 +68,7 @@ const Massage = styled.input`
     border-bottom-color: #006cf6;
   }
 `;
+
 const Buttons = styled.div `
   display: flex;
   justify-content: space-around;
@@ -134,10 +135,12 @@ export default class extends Component {
   }
 
   handleClear() {
-    this.setState({ name: '' });
-    this.setState({ email: '' });
-    this.setState({ age: '' });
-    this.setState({ massage: '' });
+    this.setState({
+      name: '',
+      email: '',
+      age: '',
+      massage: '',
+    });
   }
 
   render() {
